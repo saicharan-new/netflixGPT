@@ -79,16 +79,17 @@ const Login = () => {
 
   }
   return (
-    <div>
+    <div className="relative">
       <Header />
       <div className="relative">
         <img
           src={LOGIN_BG}
           alt="background"
+          className="w-full h-[100vh]"
         />
       </div>
-      <form onSubmit={(e) => e.preventDefault()} className="w-4/12 absolute flex flex-col p-12 top-[25%] right-[35%] bg-[#000a] rounded-2xl items-start">
-        <h1 className="font-bold text-white text-3xl text-left py-4">
+      <form onSubmit={(e) => e.preventDefault()} className="w-4/12 absolute flex flex-col p-9 pb-6 top-[12%] right-[35%] bg-[#000a] rounded-2xl items-start">
+        <h1 className="font-bold text-white text-3xl text-left pb-4">
           {isSignInForm ? "Sign In" : "Sign Up"}
         </h1>
         {!isSignInForm && (
@@ -96,36 +97,36 @@ const Login = () => {
             ref={name}
             type="text"
             placeholder="Full Name"
-            className="p-4 my-4 w-full bg-gray-700 text-white"
+            className="p-3 my-3 w-full bg-gray-700 text-white"
           />
         )}
         <input
           ref={email}
           type="text"
           placeholder="Email"
-          className="p-4 my-4 w-full bg-gray-700 text-white"
+          className="p-3 my-3 w-full bg-gray-700 text-white"
         />
         {isSignInForm ? (
           <input
             ref={password}
             type="Password"
             placeholder="Password"
-            className="p-4 my-4 w-full bg-gray-700 text-white"
+            className="p-3 my-3 w-full bg-gray-700 text-white"
           />
         ) : (
           <input
             ref={password}
             type="Password"
             placeholder="Create Password"
-            className="p-4 my-4 w-full bg-gray-700 text-white"
+            className="p-3 my-3 w-full bg-gray-700 text-white"
           />
         )}
         <p className="text-red-600 font-bold text-lg py-1">{errorMessage}</p>
-        <button className="p-4 my-6 bg-red-600 text-white rounded-sm w-full" onClick={handleButtonClick}>
+        <button className="p-3 mb-4 bg-red-600 text-white rounded-sm w-full" onClick={handleButtonClick}>
           {isSignInForm ? "Sign In" : "Sign Up"}
         </button>
         <p
-          className="my-4 text-white cursor-pointer"
+          className="my-3 text-white cursor-pointer"
           onClick={toggleSignInForm}
         >
           {isSignInForm

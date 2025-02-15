@@ -5,3 +5,12 @@ export const LOGO =
   export const USER_AVATAR = "https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg";
 
   export const LOGIN_BG = "https://assets.nflxext.com/ffe/siteui/vlv3/7a8c0067-a424-4e04-85f8-9e25a49a86ed/web/IN-en-20250120-TRIFECTA-perspective_860a95da-c386-446e-af83-fef8ddd80803_large.jpg";
+
+
+  export const API_OPTIONS = {
+    method: 'GET',
+    headers: {
+      accept: 'application/json',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwYWQ0MTQyNTUxNGIwYjhlYmQyNTNiNmFkZDRjYzMwYSIsIm5iZiI6MTczOTU5OTY4Mi45OTQsInN1YiI6IjY3YjAyZjQyNzBjODg2NWViZDM2MTgyMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.WKr5va0i2N4Nob5Lk0Org0zCZPiSwC5oNrSmu4CTpPQ'
+    }
+  };

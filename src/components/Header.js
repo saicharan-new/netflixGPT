@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { auth } from '../utils/firebase';
 import { useNavigate } from 'react-router-dom';
@@ -41,9 +41,9 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="absolute px-8 py-2 bg-gradient-to-b from-black z-10 w-full flex items-center justify-between">
+    <div className="absolute px-8 py-2 bg-gradient-to-b from-black z-10 w-full flex items-center justify-between h-20">
       <div className="image">
-        <img className="w-44" src={LOGO} alt="logo" />
+        <img className="w-40" src={LOGO} alt="logo" />
       </div>
       {user && (
         <div className="flex gap-1 items-center">
